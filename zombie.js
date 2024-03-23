@@ -34,6 +34,12 @@ export default class Zombie{
 
 
     }
+    kill(){
+      this.app.stage.removeChild(this.zombie);
+    }
+    get position(){
+      return this.zombie.position;
+    }
 
     randomSpamPoint(){
         let edge = Math.floor(Math.random()*4);
